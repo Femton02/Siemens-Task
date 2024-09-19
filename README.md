@@ -23,7 +23,7 @@ This project focuses on implementing a system for generating and managing messag
 - **Directory Structure**:
   - `src/`: Contains `main.cpp` and other source files responsible for the core functionality of message generation and handling.
   - `include/`: Header files defining interfaces and constants for message generation.
-  - `test/`: Contains unit tests for validating various aspects of message generation, including edge cases and expected output.
+  - `test/`: Contains unit tests for validating message generation.
   - `docs/`: Documentation related to the data fragmentation codebase.
 - **Makefile**: Updated the Makefile to include commands for running the program with specified arguments and testing the implementation.
 
