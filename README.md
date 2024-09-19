@@ -32,7 +32,7 @@ To compile and run the program, use the following commands:
 
 ```sh
 make
-make run ARGS = "VALUE1 VALUE2 VALUE3"
+make run ARGS="VALUE1 VALUE2 VALUE3"
 ```
 
 To run tests:
