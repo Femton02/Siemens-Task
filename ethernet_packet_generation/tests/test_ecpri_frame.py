@@ -27,7 +27,7 @@ class TestECPRI(unittest.TestCase):
         header = ecpri_frame.build_ecpri_header()
         self.assertIsInstance(header, bytearray)
         self.assertEqual(len(header), 4)
-        self.assertEqual(header[0], 0x00)
+        self.assertEqual(header[1], 0x00)
 
 
 if __name__ == '__main__':
