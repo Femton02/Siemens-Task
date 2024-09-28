@@ -18,8 +18,14 @@ ethernet_packet_generation/
 ├── output/     # Contains packets.json
 ├── tests/      # Contains all unit test .py files
 ├── config/     # Contains config.txt (configuration settings)
+├── docs/       # Contains project documentation
 └── Makefile    # Makefile for running the project
 ```
+## Documentation
+The project documentation can be found in the `docs/` directory. The documentation includes the following files:
+- `Design_implementation_overview`: Overview of the design and implementation of the Ethernet Packet Generator explaining the architecture and key components of the program and how they interact.
+- `Testcases`: Description of the unit tests and test cases used to validate the program.
+
 
 ## Requirements
 - Python 3.x
