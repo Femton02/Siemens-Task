@@ -6,7 +6,12 @@ class TestConfig(unittest.TestCase):
 
     def setUp(self):
         # Create a sample config file for testing
-        self.sample_config_file = 'test_config.cfg'
+        directory = os.path.dirname(os.path.abspath(__file__))
+        # go up one level to the project directory
+        project_dir = os.path.dirname(directory)
+        # Construct the full path to the 'config' folder inside the project directory
+        config_path = os.path.join(project_dir, 'config')
+        self.sample_config_file = os.path.join(config_path, 'sample_config.cfg')
         with open(self.sample_config_file, 'w') as f:
             f.write('STREAM_DURATION_MS=5000\n')
             f.write('BURST_SIZE=1500\n')
@@ -25,6 +30,9 @@ class TestConfig(unittest.TestCase):
         os.remove(self.sample_config_file)
 
     def test_load_config(self):
+        """
+        Test the load_config method of the Config class
+        """
         config = Config(self.sample_config_file)
         self.assertEqual(config.stream_duration_ms, 5000)
         self.assertEqual(config.burst_size, 1500)

@@ -4,13 +4,26 @@ import binascii
 
 class PacketLogger:
     def __init__(self, output_file: str):
-        self.output_file = output_file
-        
-        # Check if the file already exists
-        if not os.path.exists(output_file):
-            # Create the file and initialize it with an empty list
+        # Get the directory of the current file (where logger.py resides)
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+
+        # Go up one level to the 'ethernet_packet_generation' directory
+        project_dir = os.path.dirname(current_dir)
+
+        # Construct the full path to the 'output' folder
+        output_dir = os.path.join(project_dir, 'output')
+
+        # Ensure that the 'output' directory exists, if not, create it
+        if not os.path.exists(output_dir):
+            os.makedirs(output_dir)
+
+        # Construct the full path to the output file
+        self.output_file = os.path.join(output_dir, output_file)
+
+        # Check if the file already exists; if not, create and initialize it
+        if not os.path.exists(self.output_file):
             with open(self.output_file, 'w') as f:
-                json.dump([], f)
+                json.dump([], f)  # Initialize with an empty list
         
     def log_packet(self, packet: bytes):
         """
@@ -118,7 +131,7 @@ class PacketLogger:
                 "destination_adrs": ':'.join(f'{b:02x}' for b in dest_mac),
                 "source_adrs": ':'.join(f'{b:02x}' for b in src_mac),
                 "ethertype/length": binascii.hexlify(ethertype).decode(),
-                "data": self._parse_ecpri_data(data),
+                "eCPRI data": self._parse_ecpri_data(data),
                 "crc32": binascii.hexlify(crc).decode(),
             }
             return packet_data

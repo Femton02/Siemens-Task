@@ -8,4 +8,5 @@ DESTINATION_ADDRESS = 0x102030302010        // Source address in hex format
 ETHER_TYPE = 0x0800                         // Constant value
 PAYLOAD_TYPE = RANDOM                       // Payload of ethernet packet, could be random or fixed value
 MAX_PACKET_SIZE = 426                       // Packet size in bytes, includes preamble, SoP, src add, dest add, etherType, payload and CRC
-IQ_SAMPLE_NUM = 100                           // Number of IQ samples in one eCPRI packet
+IQ_SAMPLE_NUM = 4                           // Number of IQ samples in one eCPRI packet
+PAYLOAD_BYTES_NUM = 32                      // Number of bytes in the payload of regular ethernet packet

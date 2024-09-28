@@ -8,7 +8,7 @@ class PacketGenerator:
     def __init__(self, config):
         self.config = config
         self.simulated_time = 0  # Simulated time in µs
-        self.logger = PacketLogger("output/packets.json")
+        self.logger = PacketLogger("packets.json")
 
     def generate_packets(self):
         """
@@ -114,7 +114,7 @@ class PacketGenerator:
         """
         # Generate the standard Ethernet payload
         if self.config.payload_type == "RANDOM":
-            return bytearray(random.getrandbits(8) for _ in range(32))  # Example standard data
+            return bytearray(random.getrandbits(8) for _ in range(self.config.payload_bytes_num))  # Example standard data
         else:
             return bytearray(b'THIS IS A TEST')  # Example fixed value
 

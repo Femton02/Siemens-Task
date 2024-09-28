@@ -39,3 +39,36 @@ To run tests:
 ```sh
 make test
 ```
+
+---
+## Ethernet Packet Generator
+
+### Overview
+The Ethernet Packet Generator project is designed to simulate the generation of Ethernet packets and eCPRI IQ Message Type 0 packets. Users can configure various parameters such as packet size, burst periodicity, and the number of IQ samples while ensuring proper 4-byte alignment of the generated packets. The project generates packets in bursts and logs the results in a JSON file.
+
+### Features
+- Configurable packet generation based on user-defined parameters.
+- Supports Ethernet and eCPRI over Ethernet packet formats.
+- Ensures proper 4-byte alignment and handling of Inter-Frame Gaps (IFGs).
+- Outputs generated packets to a JSON file.
+
+
+### Usage
+
+#### Running the Main Program
+
+To run the Ethernet Packet Generator, execute the following command:
+
+```sh
+make run
+```
+
+This command generates packets based on the settings specified in the `config/config.txt` file.
+
+#### Running Unit Tests
+
+To run the unit tests, use the following command:
+
+```sh
+make test
+```

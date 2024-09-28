@@ -1,3 +1,5 @@
+import os
+
 class Config:
     def __init__(self, filename):
         self.stream_duration_ms = 0
@@ -11,10 +13,22 @@ class Config:
         self.packet_type = ''
         self.max_packet_size = 0
         self.iq_sample_num = 0
+        self.payload_bytes_num = 0
         self.load_config(filename)
 
     def load_config(self, filename):
-        with open(filename, 'r') as file:
+        """
+        Load configuration from the confi file
+        """
+        # Get the directory of the current file (config.py in this case)
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+
+        # Go up one level to the project directory
+        project_dir = os.path.dirname(current_dir)
+
+        # Construct the full path to the 'config' folder inside the project directory
+        config_path = os.path.join(project_dir, 'config', filename)
+        with open(config_path, 'r') as file:
             for line in file:
                 if line.startswith("//") or line.startswith("\n"):
                     continue  # Ignore comments
@@ -47,3 +61,5 @@ class Config:
                     self.packet_type = value
                 elif key.strip() == 'IQ_SAMPLE_NUM':
                     self.iq_sample_num = int(value)
+                elif key.strip() == 'PAYLOAD_BYTES_NUM':
+                    self.payload_bytes_num = int(value)

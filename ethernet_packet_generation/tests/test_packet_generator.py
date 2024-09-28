@@ -8,7 +8,7 @@ from src.utils import crc32, get_ifg_padding
 class TestPacketGenerator(unittest.TestCase):
     
     # def test_simulation_time(self):
-    #     config = Config('config/config.txt')
+    #     config = Config('config.txt')
     #     packet_generator = PacketGenerator(config)
     #     packet_generator.generate_packets()
     #     self.assertEqual(packet_generator.simulated_time, config.stream_duration_ms * 1000)
@@ -17,7 +17,7 @@ class TestPacketGenerator(unittest.TestCase):
         """
         Test the creation of an Ethernet packet
         """
-        config = Config("config/config.txt")
+        config = Config("config.txt")
         config.stream_duration_ms = 1
         config.burst_size = 3
         config.burst_periodicity_us = 100
@@ -37,7 +37,7 @@ class TestPacketGenerator(unittest.TestCase):
         """
         Test the creation of an eCPRI packet
         """
-        config = Config("config/config.txt")
+        config = Config("config.txt")
         config.stream_duration_ms = 1
         config.burst_size = 3
         config.burst_periodicity_us = 100
@@ -57,7 +57,8 @@ class TestPacketGenerator(unittest.TestCase):
         """
         Test the get_ether_type method of the PacketGenerator
         """
-        config = Config("config/config.txt")
+        
+        config = Config("config.txt")
         config.packet_type = 'ECPRI'
         packet_generator = PacketGenerator(config)
         ether_type = packet_generator._get_ether_type()
@@ -73,7 +74,7 @@ class TestPacketGenerator(unittest.TestCase):
         """
         Test the fixed payload generation of the ethernet packet
         """
-        config = Config("config/config.txt")
+        config = Config("config.txt")
         config.payload_type = 'FIXED'
         config.packet_type = 'ETHERNET'
         packet_generator = PacketGenerator(config)

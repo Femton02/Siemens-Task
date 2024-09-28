@@ -10,6 +10,10 @@ class EthernetFrame:
         self.frame = self.build_frame()
 
     def build_frame(self):
+        """ 
+        Build an Ethernet frame with the given source and destination MAC addresses, EtherType, and payload.
+        :return: The Ethernet frame as a byte string, or None if the frame exceeds the maximum size.
+        """
         if len(self.payload) > 1500:
             return None  # Payload exceeds the maximum size
         # Build the Ethernet frame (including preamble, SOF, addresses, payload, and CRC)

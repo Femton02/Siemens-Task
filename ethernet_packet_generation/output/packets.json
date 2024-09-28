@@ -1,6 +1,48 @@
 [
     {
-        "dropped_packet": "Packet dropped due to size, sending IFGs..."
+        "preamble": "55555555555555",
+        "SOF": "fd",
+        "destination_adrs": "10:20:30:30:20:10",
+        "source_adrs": "10:20:30:40:50:60",
+        "ethertype/length": "aefe",
+        "eCPRI data": {
+            "version": 0,
+            "message_type": 0,
+            "message_length": 16,
+            "data_payload": "cbfc72a9258b090969a19970f5401e14",
+            "padding": "0000000000000000000000000000000000000000000000000000"
+        },
+        "crc32": "0a26f06b"
+    },
+    {
+        "preamble": "55555555555555",
+        "SOF": "fd",
+        "destination_adrs": "10:20:30:30:20:10",
+        "source_adrs": "10:20:30:40:50:60",
+        "ethertype/length": "aefe",
+        "eCPRI data": {
+            "version": 0,
+            "message_type": 0,
+            "message_length": 16,
+            "data_payload": "288a5c59dec3c91623072b080e3e106b",
+            "padding": "0000000000000000000000000000000000000000000000000000"
+        },
+        "crc32": "9135d886"
+    },
+    {
+        "preamble": "55555555555555",
+        "SOF": "fd",
+        "destination_adrs": "10:20:30:30:20:10",
+        "source_adrs": "10:20:30:40:50:60",
+        "ethertype/length": "aefe",
+        "eCPRI data": {
+            "version": 0,
+            "message_type": 0,
+            "message_length": 16,
+            "data_payload": "954ae2918852e624e0aa483112fedbda",
+            "padding": "0000000000000000000000000000000000000000000000000000"
+        },
+        "crc32": "b72edc68"
     },
     {
         "IFG": "0707"
@@ -9,7 +51,49 @@
         "IFG": "070707070707070707070707070707070707070707070707070707070707"
     },
     {
-        "dropped_packet": "Packet dropped due to size, sending IFGs..."
+        "preamble": "55555555555555",
+        "SOF": "fd",
+        "destination_adrs": "10:20:30:30:20:10",
+        "source_adrs": "10:20:30:40:50:60",
+        "ethertype/length": "aefe",
+        "eCPRI data": {
+            "version": 0,
+            "message_type": 0,
+            "message_length": 16,
+            "data_payload": "0def79634ba5a1d390f14d0d15b7b6ef",
+            "padding": "0000000000000000000000000000000000000000000000000000"
+        },
+        "crc32": "cdcdcd09"
+    },
+    {
+        "preamble": "55555555555555",
+        "SOF": "fd",
+        "destination_adrs": "10:20:30:30:20:10",
+        "source_adrs": "10:20:30:40:50:60",
+        "ethertype/length": "aefe",
+        "eCPRI data": {
+            "version": 0,
+            "message_type": 0,
+            "message_length": 16,
+            "data_payload": "e7aa735baf3e9e4d9b61623c22d9aae9",
+            "padding": "0000000000000000000000000000000000000000000000000000"
+        },
+        "crc32": "c1eab2d8"
+    },
+    {
+        "preamble": "55555555555555",
+        "SOF": "fd",
+        "destination_adrs": "10:20:30:30:20:10",
+        "source_adrs": "10:20:30:40:50:60",
+        "ethertype/length": "aefe",
+        "eCPRI data": {
+            "version": 0,
+            "message_type": 0,
+            "message_length": 16,
+            "data_payload": "3a0ac70545038afa93c84b9fc3acc655",
+            "padding": "0000000000000000000000000000000000000000000000000000"
+        },
+        "crc32": "aedb5007"
     },
     {
         "IFG": "0707"
@@ -18,7 +102,49 @@
         "IFG": "070707070707070707070707070707070707070707070707070707070707"
     },
     {
-        "dropped_packet": "Packet dropped due to size, sending IFGs..."
+        "preamble": "55555555555555",
+        "SOF": "fd",
+        "destination_adrs": "10:20:30:30:20:10",
+        "source_adrs": "10:20:30:40:50:60",
+        "ethertype/length": "aefe",
+        "eCPRI data": {
+            "version": 0,
+            "message_type": 0,
+            "message_length": 16,
+            "data_payload": "9120e8d639bd180dda614fed4011e4dd",
+            "padding": "0000000000000000000000000000000000000000000000000000"
+        },
+        "crc32": "b61ba7e1"
+    },
+    {
+        "preamble": "55555555555555",
+        "SOF": "fd",
+        "destination_adrs": "10:20:30:30:20:10",
+        "source_adrs": "10:20:30:40:50:60",
+        "ethertype/length": "aefe",
+        "eCPRI data": {
+            "version": 0,
+            "message_type": 0,
+            "message_length": 16,
+            "data_payload": "5ab5682199d8cae7ce4672b4d09eb3b8",
+            "padding": "0000000000000000000000000000000000000000000000000000"
+        },
+        "crc32": "bfb8e75c"
+    },
+    {
+        "preamble": "55555555555555",
+        "SOF": "fd",
+        "destination_adrs": "10:20:30:30:20:10",
+        "source_adrs": "10:20:30:40:50:60",
+        "ethertype/length": "aefe",
+        "eCPRI data": {
+            "version": 0,
+            "message_type": 0,
+            "message_length": 16,
+            "data_payload": "faf0b2c7e996afc7455b8ec1a8847eba",
+            "padding": "0000000000000000000000000000000000000000000000000000"
+        },
+        "crc32": "1ece6d5a"
     },
     {
         "IFG": "0707"
@@ -27,55 +153,49 @@
         "IFG": "070707070707070707070707070707070707070707070707070707070707"
     },
     {
-        "IFG": "0707"
+        "preamble": "55555555555555",
+        "SOF": "fd",
+        "destination_adrs": "10:20:30:30:20:10",
+        "source_adrs": "10:20:30:40:50:60",
+        "ethertype/length": "aefe",
+        "eCPRI data": {
+            "version": 0,
+            "message_type": 0,
+            "message_length": 16,
+            "data_payload": "928c2fece255ba40bf27fcd41e8b821b",
+            "padding": "0000000000000000000000000000000000000000000000000000"
+        },
+        "crc32": "f022def6"
     },
     {
-        "IFG": "070707070707070707070707070707070707070707070707070707070707"
+        "preamble": "55555555555555",
+        "SOF": "fd",
+        "destination_adrs": "10:20:30:30:20:10",
+        "source_adrs": "10:20:30:40:50:60",
+        "ethertype/length": "aefe",
+        "eCPRI data": {
+            "version": 0,
+            "message_type": 0,
+            "message_length": 16,
+            "data_payload": "a2130faa9d697b4e57af0c29be203276",
+            "padding": "0000000000000000000000000000000000000000000000000000"
+        },
+        "crc32": "b750f882"
     },
     {
-        "dropped_packet": "Packet dropped due to size, sending IFGs..."
-    },
-    {
-        "IFG": "0707"
-    },
-    {
-        "IFG": "070707070707070707070707070707070707070707070707070707070707"
-    },
-    {
-        "dropped_packet": "Packet dropped due to size, sending IFGs..."
-    },
-    {
-        "IFG": "0707"
-    },
-    {
-        "IFG": "070707070707070707070707070707070707070707070707070707070707"
-    },
-    {
-        "dropped_packet": "Packet dropped due to size, sending IFGs..."
-    },
-    {
-        "IFG": "0707"
-    },
-    {
-        "IFG": "070707070707070707070707070707070707070707070707070707070707"
-    },
-    {
-        "IFG": "0707"
-    },
-    {
-        "IFG": "070707070707070707070707070707070707070707070707070707070707"
-    },
-    {
-        "dropped_packet": "Packet dropped due to size, sending IFGs..."
-    },
-    {
-        "IFG": "0707"
-    },
-    {
-        "IFG": "070707070707070707070707070707070707070707070707070707070707"
-    },
-    {
-        "dropped_packet": "Packet dropped due to size, sending IFGs..."
+        "preamble": "55555555555555",
+        "SOF": "fd",
+        "destination_adrs": "10:20:30:30:20:10",
+        "source_adrs": "10:20:30:40:50:60",
+        "ethertype/length": "aefe",
+        "eCPRI data": {
+            "version": 0,
+            "message_type": 0,
+            "message_length": 16,
+            "data_payload": "341a6e2415082cd60650b2fbd84e85ea",
+            "padding": "0000000000000000000000000000000000000000000000000000"
+        },
+        "crc32": "de49f014"
     },
     {
         "IFG": "0707"
@@ -84,7 +204,49 @@
         "IFG": "070707070707070707070707070707070707070707070707070707070707"
     },
     {
-        "dropped_packet": "Packet dropped due to size, sending IFGs..."
+        "preamble": "55555555555555",
+        "SOF": "fd",
+        "destination_adrs": "10:20:30:30:20:10",
+        "source_adrs": "10:20:30:40:50:60",
+        "ethertype/length": "aefe",
+        "eCPRI data": {
+            "version": 0,
+            "message_type": 0,
+            "message_length": 16,
+            "data_payload": "5682722dce6858b115f0cd555588e6c1",
+            "padding": "0000000000000000000000000000000000000000000000000000"
+        },
+        "crc32": "eff2a1ae"
+    },
+    {
+        "preamble": "55555555555555",
+        "SOF": "fd",
+        "destination_adrs": "10:20:30:30:20:10",
+        "source_adrs": "10:20:30:40:50:60",
+        "ethertype/length": "aefe",
+        "eCPRI data": {
+            "version": 0,
+            "message_type": 0,
+            "message_length": 16,
+            "data_payload": "e19b0850bd000008a82d543126ed0517",
+            "padding": "0000000000000000000000000000000000000000000000000000"
+        },
+        "crc32": "521f3764"
+    },
+    {
+        "preamble": "55555555555555",
+        "SOF": "fd",
+        "destination_adrs": "10:20:30:30:20:10",
+        "source_adrs": "10:20:30:40:50:60",
+        "ethertype/length": "aefe",
+        "eCPRI data": {
+            "version": 0,
+            "message_type": 0,
+            "message_length": 16,
+            "data_payload": "1325c1be14882a7c6714c18e368d54ed",
+            "padding": "0000000000000000000000000000000000000000000000000000"
+        },
+        "crc32": "f44ca83e"
     },
     {
         "IFG": "0707"
@@ -93,55 +255,49 @@
         "IFG": "070707070707070707070707070707070707070707070707070707070707"
     },
     {
-        "IFG": "0707"
+        "preamble": "55555555555555",
+        "SOF": "fd",
+        "destination_adrs": "10:20:30:30:20:10",
+        "source_adrs": "10:20:30:40:50:60",
+        "ethertype/length": "aefe",
+        "eCPRI data": {
+            "version": 0,
+            "message_type": 0,
+            "message_length": 16,
+            "data_payload": "8931c0d2a5e47d93541ab53680b9d3b9",
+            "padding": "0000000000000000000000000000000000000000000000000000"
+        },
+        "crc32": "6509ae8c"
     },
     {
-        "IFG": "070707070707070707070707070707070707070707070707070707070707"
+        "preamble": "55555555555555",
+        "SOF": "fd",
+        "destination_adrs": "10:20:30:30:20:10",
+        "source_adrs": "10:20:30:40:50:60",
+        "ethertype/length": "aefe",
+        "eCPRI data": {
+            "version": 0,
+            "message_type": 0,
+            "message_length": 16,
+            "data_payload": "2c035771380430c58ad5a79f923092ad",
+            "padding": "0000000000000000000000000000000000000000000000000000"
+        },
+        "crc32": "9a8bd4ad"
     },
     {
-        "dropped_packet": "Packet dropped due to size, sending IFGs..."
-    },
-    {
-        "IFG": "0707"
-    },
-    {
-        "IFG": "070707070707070707070707070707070707070707070707070707070707"
-    },
-    {
-        "dropped_packet": "Packet dropped due to size, sending IFGs..."
-    },
-    {
-        "IFG": "0707"
-    },
-    {
-        "IFG": "070707070707070707070707070707070707070707070707070707070707"
-    },
-    {
-        "dropped_packet": "Packet dropped due to size, sending IFGs..."
-    },
-    {
-        "IFG": "0707"
-    },
-    {
-        "IFG": "070707070707070707070707070707070707070707070707070707070707"
-    },
-    {
-        "IFG": "0707"
-    },
-    {
-        "IFG": "070707070707070707070707070707070707070707070707070707070707"
-    },
-    {
-        "dropped_packet": "Packet dropped due to size, sending IFGs..."
-    },
-    {
-        "IFG": "0707"
-    },
-    {
-        "IFG": "070707070707070707070707070707070707070707070707070707070707"
-    },
-    {
-        "dropped_packet": "Packet dropped due to size, sending IFGs..."
+        "preamble": "55555555555555",
+        "SOF": "fd",
+        "destination_adrs": "10:20:30:30:20:10",
+        "source_adrs": "10:20:30:40:50:60",
+        "ethertype/length": "aefe",
+        "eCPRI data": {
+            "version": 0,
+            "message_type": 0,
+            "message_length": 16,
+            "data_payload": "97184de8eb15c94d64825afd268d438d",
+            "padding": "0000000000000000000000000000000000000000000000000000"
+        },
+        "crc32": "09de30a1"
     },
     {
         "IFG": "0707"
@@ -150,7 +306,49 @@
         "IFG": "070707070707070707070707070707070707070707070707070707070707"
     },
     {
-        "dropped_packet": "Packet dropped due to size, sending IFGs..."
+        "preamble": "55555555555555",
+        "SOF": "fd",
+        "destination_adrs": "10:20:30:30:20:10",
+        "source_adrs": "10:20:30:40:50:60",
+        "ethertype/length": "aefe",
+        "eCPRI data": {
+            "version": 0,
+            "message_type": 0,
+            "message_length": 16,
+            "data_payload": "078926f5e5f245585589539c06e56ae2",
+            "padding": "0000000000000000000000000000000000000000000000000000"
+        },
+        "crc32": "b4583f75"
+    },
+    {
+        "preamble": "55555555555555",
+        "SOF": "fd",
+        "destination_adrs": "10:20:30:30:20:10",
+        "source_adrs": "10:20:30:40:50:60",
+        "ethertype/length": "aefe",
+        "eCPRI data": {
+            "version": 0,
+            "message_type": 0,
+            "message_length": 16,
+            "data_payload": "034919fca9aba219555f03313563cbc7",
+            "padding": "0000000000000000000000000000000000000000000000000000"
+        },
+        "crc32": "448ef50d"
+    },
+    {
+        "preamble": "55555555555555",
+        "SOF": "fd",
+        "destination_adrs": "10:20:30:30:20:10",
+        "source_adrs": "10:20:30:40:50:60",
+        "ethertype/length": "aefe",
+        "eCPRI data": {
+            "version": 0,
+            "message_type": 0,
+            "message_length": 16,
+            "data_payload": "01bd110540632af26773ff244eeb03e0",
+            "padding": "0000000000000000000000000000000000000000000000000000"
+        },
+        "crc32": "3fbae839"
     },
     {
         "IFG": "0707"
@@ -159,55 +357,49 @@
         "IFG": "070707070707070707070707070707070707070707070707070707070707"
     },
     {
-        "IFG": "0707"
+        "preamble": "55555555555555",
+        "SOF": "fd",
+        "destination_adrs": "10:20:30:30:20:10",
+        "source_adrs": "10:20:30:40:50:60",
+        "ethertype/length": "aefe",
+        "eCPRI data": {
+            "version": 0,
+            "message_type": 0,
+            "message_length": 16,
+            "data_payload": "c9cf2138915e10681ac8daf540e1c4a5",
+            "padding": "0000000000000000000000000000000000000000000000000000"
+        },
+        "crc32": "406ee42c"
     },
     {
-        "IFG": "070707070707070707070707070707070707070707070707070707070707"
+        "preamble": "55555555555555",
+        "SOF": "fd",
+        "destination_adrs": "10:20:30:30:20:10",
+        "source_adrs": "10:20:30:40:50:60",
+        "ethertype/length": "aefe",
+        "eCPRI data": {
+            "version": 0,
+            "message_type": 0,
+            "message_length": 16,
+            "data_payload": "a9b99093f5c86b06dc87b4755bf304b5",
+            "padding": "0000000000000000000000000000000000000000000000000000"
+        },
+        "crc32": "7b2847d2"
     },
     {
-        "dropped_packet": "Packet dropped due to size, sending IFGs..."
-    },
-    {
-        "IFG": "0707"
-    },
-    {
-        "IFG": "070707070707070707070707070707070707070707070707070707070707"
-    },
-    {
-        "dropped_packet": "Packet dropped due to size, sending IFGs..."
-    },
-    {
-        "IFG": "0707"
-    },
-    {
-        "IFG": "070707070707070707070707070707070707070707070707070707070707"
-    },
-    {
-        "dropped_packet": "Packet dropped due to size, sending IFGs..."
-    },
-    {
-        "IFG": "0707"
-    },
-    {
-        "IFG": "070707070707070707070707070707070707070707070707070707070707"
-    },
-    {
-        "IFG": "0707"
-    },
-    {
-        "IFG": "070707070707070707070707070707070707070707070707070707070707"
-    },
-    {
-        "dropped_packet": "Packet dropped due to size, sending IFGs..."
-    },
-    {
-        "IFG": "0707"
-    },
-    {
-        "IFG": "070707070707070707070707070707070707070707070707070707070707"
-    },
-    {
-        "dropped_packet": "Packet dropped due to size, sending IFGs..."
+        "preamble": "55555555555555",
+        "SOF": "fd",
+        "destination_adrs": "10:20:30:30:20:10",
+        "source_adrs": "10:20:30:40:50:60",
+        "ethertype/length": "aefe",
+        "eCPRI data": {
+            "version": 0,
+            "message_type": 0,
+            "message_length": 16,
+            "data_payload": "dd542920e43b8c25fa84a6868912dd14",
+            "padding": "0000000000000000000000000000000000000000000000000000"
+        },
+        "crc32": "4c50da3e"
     },
     {
         "IFG": "0707"
@@ -216,61 +408,19 @@
         "IFG": "070707070707070707070707070707070707070707070707070707070707"
     },
     {
-        "dropped_packet": "Packet dropped due to size, sending IFGs..."
-    },
-    {
-        "IFG": "0707"
-    },
-    {
-        "IFG": "070707070707070707070707070707070707070707070707070707070707"
-    },
-    {
-        "IFG": "0707"
-    },
-    {
-        "IFG": "070707070707070707070707070707070707070707070707070707070707"
-    },
-    {
-        "dropped_packet": "Packet dropped due to size, sending IFGs..."
-    },
-    {
-        "IFG": "0707"
-    },
-    {
-        "IFG": "070707070707070707070707070707070707070707070707070707070707"
-    },
-    {
-        "dropped_packet": "Packet dropped due to size, sending IFGs..."
-    },
-    {
-        "IFG": "0707"
-    },
-    {
-        "IFG": "070707070707070707070707070707070707070707070707070707070707"
-    },
-    {
-        "dropped_packet": "Packet dropped due to size, sending IFGs..."
-    },
-    {
-        "IFG": "0707"
-    },
-    {
-        "IFG": "070707070707070707070707070707070707070707070707070707070707"
-    },
-    {
-        "IFG": "0707"
-    },
-    {
-        "IFG": "070707070707070707070707070707070707070707070707070707070707"
-    },
-    {
-        "dropped_packet": "Packet dropped due to size, sending IFGs..."
-    },
-    {
-        "IFG": "0707"
-    },
-    {
-        "IFG": "070707070707070707070707070707070707070707070707070707070707"
+        "preamble": "55555555555555",
+        "SOF": "fd",
+        "destination_adrs": "10:20:30:30:20:10",
+        "source_adrs": "10:20:30:40:50:60",
+        "ethertype/length": "aefe",
+        "eCPRI data": {
+            "version": 0,
+            "message_type": 0,
+            "message_length": 16,
+            "data_payload": "19c2371a4c5b374bfeed8eeb7a1f6868",
+            "padding": "0000000000000000000000000000000000000000000000000000"
+        },
+        "crc32": "da96139b"
     },
     {
         "IFG": "0707"

@@ -1,10 +1,14 @@
-import time
+import os
 from config import Config
 from packet import PacketGenerator
 
 def main():
+    """
+    Main function to generate packets
+    """
     # Load configuration
-    config = Config('config/config.txt')
+    filename = 'config.txt'
+    config = Config(filename)
 
     # Initialize packet generator
     packet_generator = PacketGenerator(config)
